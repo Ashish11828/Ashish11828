@@ -31,6 +31,11 @@
 @keyframes grid-flow{to{transform:translate(48px,48px)}}
 @keyframes meteor{0%,65%{opacity:0;transform:translate(0,0)}67%{opacity:.8}78%{opacity:0;transform:translate(450px,140px)}100%{opacity:0;transform:translate(450px,140px)}}
 @media(prefers-reduced-motion:reduce){.aurora,.aurora-second,.spatial-grid,.meteor{animation:none}.meteor{opacity:0}}
+.headset{animation:headset-float 7s ease-in-out infinite}.hud-ring{transform-origin:1000px 148px;animation:orbit 24s linear infinite}.holo-beam{animation:beam 5s ease-in-out infinite}.floor{animation:floor 14s linear infinite}
+@keyframes headset-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes beam{0%,100%{opacity:.2}50%{opacity:.65}}
+@keyframes floor{to{stroke-dashoffset:-96}}
+@media(prefers-reduced-motion:reduce){.headset,.hud-ring,.holo-beam,.floor{animation:none}}
 </style>
 <g clip-path="url(#clip)">
 <rect width="1200" height="440" fill="url(#bg)"/>
@@ -76,10 +81,20 @@
 <g class="orbit" fill="none" stroke="#7dd3fc" stroke-opacity=".3"><ellipse cx="1000" cy="148" rx="145" ry="100" transform="rotate(-25 1000 148)"/><circle cx="1131" cy="87" r="4" fill="#7dd3fc" stroke="none"/></g>
 <g class="orbit-inner" fill="none" stroke="#fda4af" stroke-opacity=".2"><ellipse cx="1000" cy="148" rx="110" ry="128"/><circle cx="1000" cy="20" r="3" fill="#fda4af" stroke="none"/></g>
 <rect width="1200" height="440" fill="url(#fade)"/>
+<g fill="none" stroke="#7dd3fc" stroke-opacity=".15" stroke-width="1"><path class="floor" stroke-dasharray="8 10" d="M740 257 1000 150 1200 250M800 270 1000 150 1140 270M870 275 1000 150 1070 275M750 230H1200M800 210H1160M850 190H1100"/></g>
+<g class="headset" transform-origin="1000 148">
+<path class="holo-beam" d="M927 170 866 245H1130L1073 170" fill="#38bdf8" fill-opacity=".07" stroke="#7dd3fc" stroke-opacity=".3"/>
+<g fill="#111c36" stroke="#7dd3fc" stroke-width="2"><path d="M903 109Q900 92 920 89L1077 97Q1094 99 1094 118L1088 166Q1086 181 1071 181L1031 177 1011 160 990 159 971 175 927 170Q909 168 908 153Z"/><path d="M905 116 887 110 885 141 908 150M1093 117 1107 121 1104 151 1090 156" fill="#1d2b48"/>
+<path d="M923 110 976 112 974 148 927 146ZM1023 115 1075 118 1070 153 1021 150Z" fill="#142f48" stroke="#a5b4fc"/>
+<path d="M934 120 966 121M1033 125 1064 127M940 135 956 136M1040 140 1056 141" stroke="#7dd3fc" stroke-opacity=".7"/>
+<path d="M991 125 1011 127M1001 117 999 137" stroke="#fda4af"/></g></g>
+<g fill="none" stroke="#7dd3fc" stroke-opacity=".5"><path d="M840 77V49H868M1130 49H1158V77M840 218V246H868M1130 246H1158V218"/><circle class="hud-ring" cx="1000" cy="148" r="132" stroke-dasharray="40 110 8 45"/></g>
+<text x="1000" y="264" text-anchor="middle" fill="#7dd3fc" font-family="monospace" font-size="10" letter-spacing="3">BUILDING BEYOND THE SCREEN</text>
 <rect x="64" y="57" width="64" height="5" rx="2" fill="url(#accent)"/>
-<text x="64" y="135" fill="#f4f6fb" font-family="Arial, sans-serif" font-size="58" font-weight="700">Ashish Kumar</text>
-<text x="67" y="183" fill="#7dd3fc" font-family="Arial, sans-serif" font-size="24">XR · Artificial Intelligence · Mobile Engineering</text>
-<text x="67" y="233" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="21">Spatial interfaces. Connected systems. Practical prototypes.</text>
+<text x="64" y="94" fill="#a5b4fc" font-family="monospace" font-size="13" letter-spacing="4">SPATIAL COMPUTING / HUMAN-CENTERED AI</text>
+<text x="64" y="151" fill="#f4f6fb" font-family="Arial, sans-serif" font-size="58" font-weight="700">Ashish Kumar</text>
+<text x="67" y="194" fill="#7dd3fc" font-family="Arial, sans-serif" font-size="24">XR · Artificial Intelligence · Mobile Engineering</text>
+<text x="67" y="237" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="21">Spatial interfaces. Connected systems. Practical prototypes.</text>
 
 <g font-family="Arial, sans-serif">
 <g transform="translate(64 280)"><rect width="250" height="124" rx="12" fill="#10192e" stroke="#34445c"/>

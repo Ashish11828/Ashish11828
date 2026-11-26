@@ -22,6 +22,8 @@ My research contributions span **ESA XR, AIVR, ICMLAI, and XRM**, alongside a **
 
 ## Research
 
+<img src="./assets/research-strip.svg" width="100%" alt="2026 research: ESA XR, AIVR, ICMLAI, XRM and VR Summit" />
+
 **Spatial interfaces · Sustainable XR · Human–AI collaboration**
 
 | Venue | Contribution | Status |
@@ -44,6 +46,8 @@ My research contributions span **ESA XR, AIVR, ICMLAI, and XRM**, alongside a **
 </details>
 
 ## Selected projects
+
+**From spatial guidance to robot teaching and accessible wearables.**
 
 <table>
 <tr>
@@ -103,6 +107,8 @@ My research contributions span **ESA XR, AIVR, ICMLAI, and XRM**, alongside a **
 ---
 
 <div align="center">
+
+<img src="./assets/connect-footer.svg" width="100%" alt="Let’s build the next spatial experience" />
 
 **Open to conversations about XR research, smart glasses, and human-centered AI.**
 
